@@ -1,6 +1,7 @@
-a = int(input("Enter the numbers: "))
-b = int(input("Enter the numbers: "))
+def add(a,d):
+    return a+b
 
-d = a+b
-
-print(d)
+for i in range(3):
+    a = int(input("Enter the numbers:"))
+    b = int(input("Enter the numbers:"))
+    print(add(a,b))
