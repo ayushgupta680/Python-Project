@@ -1,6 +1,6 @@
 a = int(input("Enter the numbers: "))
 b = int(input("Enter the numbers: "))
 
-c = a+b
+d = a+b
 
-print(c)
+print(d)
