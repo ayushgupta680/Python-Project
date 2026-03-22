@@ -1,2 +1,40 @@
-for i in range(1,11):
-    print(i*2)
+def add(a,b):
+    return a + b
+
+def subtract(a,b):
+    return a - b
+
+def multiply(a,b):
+    return a * b
+
+def divide(a,b):
+    if b == 0:
+        return "Cannot divide by zero"
+    return a / b
+
+while True:
+    print("\n Calculator Menu")
+    print("1. Add")
+    print("2. Subtract")
+    print("3. Multiply")
+    print("4. Divide")
+    
+    choice = int(input("Enter Choice:"))
+    
+    if choice == 5:
+        print("Good Bye")
+        break
+    
+    a = int(input("Enter the numbers:"))
+    b = int(input("Enter the numbers:"))
+    
+    if choice == 1:
+        print("Result:",add(a,b))
+    elif choice == 2:
+        print("Result:",subtract(a,b))
+    elif choice == 3:
+        print("Result:",multiply(a,b))
+    elif choice == 4:
+        print("Result:", divide(a,b))
+    else:
+        print("Invalid Choice")
