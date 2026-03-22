@@ -1,6 +1,6 @@
 import random
 
-number = random.randint(1, 100)
+number = random.randint(1,50)
 guess = 0
 
 while guess != number:
@@ -9,11 +9,13 @@ while guess != number:
     if guess < number:
         print("Too Low")
     elif guess > number:
-        print("Too Hight")
+        print("Too High")
     else:
         print("Correct")
         
-1
+
+        
+
         
 
 
