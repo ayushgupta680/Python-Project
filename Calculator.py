@@ -9,32 +9,32 @@ def multiply(a,b):
 
 def divide(a,b):
     if b == 0:
-        return "Cannot divide by zero"
+        return "Cannot divide"
     return a / b
 
 while True:
-    print("\n Calculator Menu")
+    print("\n Calculator")
     print("1. Add")
     print("2. Subtract")
     print("3. Multiply")
     print("4. Divide")
     
-    choice = int(input("Enter Choice:"))
+    choice = int(input("Enter choice:"))
     
     if choice == 5:
-        print("Good Bye")
+        print("Exit")
         break
     
-    a = int(input("Enter the numbers:"))
-    b = int(input("Enter the numbers:"))
+    a = int(input("Enter the number:"))
+    b = int(input("Enter the number:"))
     
     if choice == 1:
-        print("Result:",add(a,b))
+        print("Result:", add(a,b))
     elif choice == 2:
-        print("Result:",subtract(a,b))
+        print("Result:", subtract(a,b))
     elif choice == 3:
-        print("Result:",multiply(a,b))
+        print("Result:", multiply(a,b))
     elif choice == 4:
         print("Result:", divide(a,b))
     else:
-        print("Invalid Choice")
+        print("Exit")
